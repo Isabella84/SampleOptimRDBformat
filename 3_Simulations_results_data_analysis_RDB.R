@@ -4,7 +4,7 @@
 ##
 ##
 ##   Biological sampling optimization (Script SampleOptim)
-##   Developed by: Patricia Goncalves (patricia@ipma.pt) (gonpatriciajesus@gmail.com)
+##   Developed by: Patricia Goncalves (IPMA)
 ##   Version for: Regional DataBase (RDB) exchange format
 ##
 ##   Reference: 
@@ -12,7 +12,7 @@
 ##   biological parameters as input on fish stock assessment.
 ##
 ##
-##   github link: https://github.com/gonpatricia/SampleOptimRDBformat/edit/master/3_Simulations_results_data_analysis_RDB.R
+##   github link: https://github.com/gonpatricia/SampleOptimRDBformat/3_Simulations_results_data_analysis_RDB.R
 ## 
 ##
 #######################################################################################################
