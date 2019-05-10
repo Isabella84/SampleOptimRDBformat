@@ -4,7 +4,7 @@
 ##
 ##
 ##   Biological sampling optimization (Script SampleOptim)
-##   Developed by: Patricia Goncalves (patricia@ipma.pt) (gonpatriciajesus@gmail.com)
+##   Developed by: Patricia Goncalves (IPMA)
 ##   Version for: Regional DataBase (RDB) exchange format
 ##
 ##   Reference: 
@@ -12,7 +12,7 @@
 ##   biological parameters as input on fish stock assessment.
 ##
 ##
-##   github link: https://github.com/gonpatricia/SampleOptimRDBformat/edit/master/1_Simulations_RDB.R
+##   github link: https://github.com/gonpatricia/SampleOptimRDBformat/2_Simulations_RDB.R
 ## 
 ##
 #######################################################################################################
@@ -94,7 +94,7 @@ vonberPorAno<-function(ano){
 #########################################################################################################
 #########################################################################################################
 ##
-## Definir o número de otólitos por classe de comprimento (nos testes usei o j=1:20; com c(1:10, seq=1); c(10:20, seq=5))
+## Definir o nÃºmero de otÃ³litos por classe de comprimento (nos testes usei o j=1:20; com c(1:10, seq=1); c(10:20, seq=5))
 ##
 j=1  
 ##### Initial values set and fixed by species
@@ -183,7 +183,7 @@ write.table(dados_lt_age,paste("dados_lt_age_",j,".csv",sep=""),sep=",")
 ## Confindence intervals by year
 ##
 ##
-## NOTA: SUBSET 1º QUARTER (SPAWNING SEASON)
+## NOTA: SUBSET 1Âº QUARTER (SPAWNING SEASON)
 ##############################################################################
 ##############################################################################
 years<-unique(dados_bio$year)
@@ -200,7 +200,7 @@ table_mature<- function (data=dados_bio){
     results[nb,2]<-as.numeric(Lmat[[1]]) #L25
     results[nb,3]<-as.numeric(Lmat[[2]]) #L50
     results[nb,4]<-as.numeric(Lmat[[3]]) #L75
-    results[nb,5]<-nb ##ID_simulação
+    results[nb,5]<-nb ##ID_simulaÃ§Ã£o
     results[nb,6]<-unique(data$type) ##j
     nb<-nb+1
   }
