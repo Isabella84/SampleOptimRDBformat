@@ -12,7 +12,7 @@
 ##   biological parameters as input on fish stock assessment.
 ##
 ##
-##  github link: https://github.com/gonpatricia/SampleOptimRDBformat/edit/master/1_Data_exploratory_analysis_RDB.R
+##  github link: https://github.com/gonpatricia/SampleOptimRDBformat/1_Data_exploratory_analysis_RDB.R
 ## 
 ##
 #######################################################################################################
