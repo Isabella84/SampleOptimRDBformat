@@ -1,6 +1,7 @@
 # SampleOptimRDBformat
 SampleOptim R-scripts developed based on the exchange data format of the Regional Database (RDB)
-Patrícia Gonçalves (IPMA - Portugal) 
+
+Developed by: Patrícia Gonçalves (IPMA - Portugal) 
 
 The R-code was developed with the aim of sample optimization on biological sampling in fish stocks.
 The main purpose is determine the optimal number of samples necessary to estimate the biological parameters
