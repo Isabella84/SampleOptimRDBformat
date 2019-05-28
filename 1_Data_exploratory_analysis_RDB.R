@@ -53,7 +53,7 @@ nsamples_year_mes<- data_samplebio %>% group_by(Port, month, year) %>% count(dat
 #write.table(nsamples_year_mes, "numbersamples_summary_WHB.csv",sep=",")
 
 #### Length classes of the samples by Port, year and month
-lengthclass_samples_year_mes<- date_samplebio %>% group_by(Port, month, year) %>% count(Length_class)
+lengthclass_samples_year_mes<- data_samplebio %>% group_by(Port, month, year) %>% count(Length_class)
 #write.table(lengthclass_samples_year_mes, "numberlengthclasses_samples_summary_MAC.csv",sep=",")
 
 ########Figure a - length distribution samples by Port by year and month
@@ -73,7 +73,7 @@ for(bb in 1:length(year))
 
 
 #### Age of the samples by Port, year and month
-age_samples_year_mes<- date_samplebio %>% group_by(Port, month, year) %>% count(Age)
+age_samples_year_mes<- data_samplebio %>% group_by(Port, month, year) %>% count(Age)
 
 
 ########Figure b - age distribution samples by Port by year and month
@@ -98,7 +98,7 @@ years<- c("2003","2004","2005","2006","2007","2010","2011","2012","2013","2014",
 #par(mfrow=c(1,1))
 for(nb in 1: length(years))
 {
-  fig1<- hist(date_samplebio$Length_class[date_samplebio$year==years[nb]],xlab="length", ylab="number of individuals", main=years[nb])
+  fig1<- hist(data_samplebio$Length_class[data_samplebio$year==years[nb]],xlab="length", ylab="number of individuals", main=years[nb])
   dev.copy(png, paste(years[nb],"_length_distribution",".png",sep=""))
   nb<- nb+1
   dev.off()
@@ -108,7 +108,7 @@ for(nb in 1: length(years))
 ###Figure 2 - Age distribution by year
 for(nb in 1: length(years))
 {
-  fig2<- hist(date_samplebio$Age[date_samplebio$year==years[nb]],xlab="age", ylab="number of individuals", main=years[nb])
+  fig2<- hist(data_samplebio$Age[date_samplebio$year==years[nb]],xlab="age", ylab="number of individuals", main=years[nb])
   dev.copy(png, paste(years[nb],"_age_distribution",".png",sep=""))
   nb<- nb+1
   dev.off()
